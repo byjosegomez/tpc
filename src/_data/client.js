@@ -4,7 +4,7 @@ module.exports = {
     phoneForTel: "253-231-2956",
     phoneFormatted: "(253) 231-2956",
     address: {
-        lineOne: "10109 Sales Rd S"
+        lineOne: "10109 Sales Rd S",
         city: "Tacoma",
         state: "WA",
         zip: "98444",
