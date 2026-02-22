@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Budget_Planning" data-name="Budget Planning" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #231f20;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M44,63H8c-1.66,0-3-1.34-3-3V8c0-1.66,1.34-3,3-3h36c1.66,0,3,1.34,3,3v19"/>
+  <polyline class="cls-1" points="34.17 59 9 59 9 9 43 9 43 27"/>
+  <path class="cls-1" d="M17,1h18c1.1,0,2,.9,2,2v2H15v-2c0-1.1.9-2,2-2Z"/>
+  <path class="cls-1" d="M18,5h16v6c0,1.1-.9,2-2,2h-12c-1.1,0-2-.9-2-2v-6h0Z"/>
+  <path class="cls-1" d="M58.74,51c.05.33.09.66.13,1"/>
+  <path class="cls-1" d="M57.9,47c-.67-2.32-1.63-4.56-2.89-6.65l-2.01-3.35h-14s-2.01,3.35-2.01,3.35c-2.61,4.35-3.99,9.33-3.99,14.41,0,4.55,3.69,8.24,8.24,8.24h9.52c4.13,0,7.55-3.04,8.15-7"/>
+  <rect class="cls-1" x="37" y="33" width="18" height="4" rx="2" ry="2" transform="translate(92 70) rotate(-180)"/>
+  <path class="cls-1" d="M37,28.62h0c0,.25.06.5.17.72l1.83,3.66h14s1.83-3.66,1.83-3.66c.11-.22.17-.47.17-.72h0c0-.89-.72-1.62-1.62-1.62h-14.76c-.89,0-1.62.72-1.62,1.62Z"/>
+  <polyline class="cls-1" points="44 40 46 37 48 40"/>
+  <g>
+    <path class="cls-1" d="M43,57h3.5c1.38,0,2.5-1.12,2.5-2.5h0c0-1.38-1.12-2.5-2.5-2.5h-1c-1.38,0-2.5-1.12-2.5-2.5h0c0-1.38,1.12-2.5,2.5-2.5h3.5"/>
+    <line class="cls-1" x1="46" y1="57" x2="46" y2="59"/>
+    <line class="cls-1" x1="46" y1="45" x2="46" y2="47"/>
+  </g>
+  <polyline class="cls-1" points="18 24 26 19 34 24"/>
+  <line class="cls-1" x1="32" y1="33" x2="20" y2="33"/>
+  <rect class="cls-1" x="24" y="28" width="4" height="5"/>
+  <line class="cls-1" x1="32" y1="23" x2="32" y2="33"/>
+  <line class="cls-1" x1="20" y1="33" x2="20" y2="23"/>
+  <polyline class="cls-1" points="14 40 16 43 20 39"/>
+  <line class="cls-1" x1="37.8" y1="39" x2="26" y2="39"/>
+  <line class="cls-1" x1="35.59" y1="43" x2="32" y2="43"/>
+  <line class="cls-1" x1="28" y1="43" x2="26" y2="43"/>
+  <polyline class="cls-1" points="14 50 16 53 20 49"/>
+  <line class="cls-1" x1="33.6" y1="49" x2="26" y2="49"/>
+  <line class="cls-1" x1="33.05" y1="53" x2="26" y2="53"/>
+</svg>

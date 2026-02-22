@@ -29,434 +29,349 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+// <!-- ============================================ -->
+// <!--                    Hero                      -->
+// <!-- ============================================ -->
 
-    <section id="hero-143">
-        <div class="cs-container">
-            <span class="cs-topper">CodeStitch Presents</span>
-            <h1 class="cs-title">
-                The Intermediate Website Kit (LESS)
-            </h1>
+<section id="hero-2150">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Outdoor Living, No Matter The Season</span>
+            <h1 class="cs-title">Your Tacoma Patio Cover Contractor</h1>
             <p class="cs-text">
-                Building faster websites, faster. Just clone, update _data/client.js, swap out some sections, and away you go!
+                Tacoma Patio Covers is your go-to patio cover contractor, proudly serving the Tacoma, Puyallup, Lakewood, University Place, Gig Harbor, Graham, Spanaway, Auburn, and Federal Way areas. Whether you want a simple patio cover or something more luxurious with built-in amenities, we’re dedicated to providing you with the perfect solution within your budget. Contact us for a free estimate and expert advice!
             </p>
-            <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+            <a href="" class="cs-button-solid cs-button1">Request A Quote</a>
         </div>
 
-        <!-- Background Image -->
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 1490 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
-            <!--Large Tablet Image-->
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 2048, height: 1922 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1300px)" srcset="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/landing.jpg" | resize({ width: 1, height: 1 }) | jpeg %}" alt="kitchen" width="1" height="1" loading="eager" decoding="async">
-        </picture>
-    </section>
+    <!-- Background Image -->
+    <picture class="cs-background">
+    <source media="(max-width: 600px)" srcset="assets/images/cover1.jpg">
+    <source media="(min-width: 601px)" srcset="assets/images/cover1.jpg">
+    <img 
+        loading="lazy" 
+        decoding="async" 
+        src="assets/images/cover1.jpg" 
+        alt="Cover image" 
+        width="1920" 
+        height="1162" 
+        aria-hidden="true">
+</picture>
 
-    <!-- ============================================ -->
-    <!--                   Services                   -->
-    <!-- ============================================ -->
+</section>
+                     
+<!-- ============================================ -->
+<!--                  Why Choose Us               -->
+<!-- ============================================ -->
 
-    <section id="h-services-143">
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s1.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Full Kitchen Remodel
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s2.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Exterior Repairs
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s3.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Utility Maintenance
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </li>
-            <li class="cs-item">
-                <picture class="cs-icon">
-                    <img loading="lazy" decoding="async" src="/assets/svgs/s4.svg" alt="icon" width="52" height="52" aria-hidden="true">
-                </picture>
-                <h2 class="cs-title">
-                    Design Consultation
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-            </li>
-        </ul>
-    </section>
+<section id="why-2392">
+	<div class="cs-container">
+		<div class="cs-wrapper">
+			<picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="assets/images/cover2.jpg" />
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="assets/images/cover2.jpg" />
+                <img loading="lazy"
+                    decoding="async"
+                    src="assets/images/cover2.jpg"
+                    alt="people"
+                    width="586"
+                    height="690" />
+            </picture>
+			<div class="cs-content">
+				<span class="cs-topper">WHY US</span>
+				<h2 class="cs-title">Why Choose Tacoma Patio Covers?</h2>
+				<p class="cs-text">
+					In the Pacific Northwest, your patio needs to handle more than sunshine.
 
-    <!-- ============================================ -->
-    <!--                 Side By Side                 -->
-    <!-- ============================================ -->
+We design and build custom patio covers, pergolas, and roof systems that protect you from rain while keeping your space open and inviting. Built with durable, low-maintenance materials that stand up to the elements.
 
-    <section id="RPsbs-313">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
+More time outside. Less worrying about the weather.
+				</p>
+				<a href="" class="cs-button-solid">Patio Quote Request</a>
+
+            
+			</div>
+		</div>
+
+
+		<ul class="cs-card-group">
+			<li class="cs-item">
+				<img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/compass.svg" alt="icon" width="120" height="120" />
+				<div class="cs-flex">
+					<h3 class="cs-h3">1-Stop Shop:</h3>
+					<p class="cs-item-text">
+						From design, to HOA approval, to construction, we're the only contractor you'll need to call.
+					</p>
+				</div>
+			</li>
+			<li class="cs-item">
+				<img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/architect.svg" alt="icon" width="120" height="120" />
+				<div class="cs-flex">
+					<h3 class="cs-h3">Patio Cover Specialists:</h3>
+					<p class="cs-item-text">
+						We only focus on the construction of outdoor spaces. We've got our process down to a science.
+					</p>
+				</div>
+			</li>
+			<li class="cs-item">
+				<img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/budget-planning.svg" alt="icon" width="120" height="120" />
+				<div class="cs-flex">
+					<h3 class="cs-h3">The Right Price:</h3>
+					<p class="cs-item-text">
+						We offer the most competitive price in town, while never compromising quality. Just call us and see!
+					</p>
+				</div>
+			</li>
+			<li class="cs-item">
+				<img class="cs-icon" loading="lazy" decoding="async" src="/assets/svgs/agreement.svg" alt="icon" width="120" height="120" />
+				<div class="cs-flex">
+					<h3 class="cs-h3">Highly-Rated:</h3>
+					<p class="cs-item-text">
+						With over 45 glowing 5-star reviews, you can Tacoma Patio Covers to get the job done right.
+					</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>
+                                
+<!-- ============================================ -->
+<!--                  Side By Side                -->
+<!-- ============================================ -->
+
+<section id="sbs-2295">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Main Image-->
+            <div class="cs-picture-wrapper1">
                 <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" loading="lazy" decoding="async">
-                </picture>
+    <!--Mobile Image-->
+    <source media="(max-width: 600px)" srcset="assets/images/before1.jpeg">
+    <!--Tablet and above Image-->
+    <source media="(min-width: 601px)" srcset="assets/images/before1.jpeg">
+    <img loading="lazy"
+         decoding="async"
+         src="assets/images/before1.jpeg"
+         alt="construction"
+         width="272"
+         height="337">
+</picture>
+                <span class="cs-tag">Before</span>
+            </div>
+            <!--Small Image-->
+            <div class="cs-picture-wrapper2">
                 <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
-                </picture>
+    <!--Mobile Image-->
+    <source media="(max-width: 600px)" srcset="assets/images/after1.jpeg">
+    <!--Tablet and above Image-->
+    <source media="(min-width: 601px)" srcset="assets/images/after1.jpeg">
+    <img loading="lazy"
+         decoding="async"
+         src="assets/images/after1.jpeg"
+         alt="construction"
+         width="243"
+         height="367">
+</picture>
+                <span class="cs-tag">After</span>
             </div>
-            <!-- Right Content Section-->
-            <div class="cs-content">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">
-                    About Stitch Law
-                </h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <div class="cs-quote">
-                    <span class="cs-quote-text">
-                        In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                    </span>
-                    <span class="cs-name">Justin Time</span>
-                    <span class="cs-job">CEO-Founder</span>
-                    <img class="cs-quote-icon" loading="lazy" decoding="async" src="/assets/svgs/quote.svg" alt="gavel" width="136" height="77">
-                </div>
-                <a href="/about/" class="cs-button-solid">About Us</a>
-            </div>
+            <img class="cs-arrow" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/before-after-arrow.svg" alt="arrow" width="148" height="54">
         </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--             Side By Side Reverse             -->
-    <!-- ============================================ -->
-
-    <section id="RPsbsr-313">
-        <div class="cs-container">
-            <!-- Left Image Section -->
-            <div class="cs-image-group">
-                <picture class="cs-picture cs-picture1">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 482, height: 536 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 802, height: 892 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 1044, height: 1162 }) | jpeg %}" alt="lawyers" width="522" height="581" loading="lazy" decoding="async">
-                </picture>
-                <picture class="cs-picture cs-picture2">
-                    <!--Mobile Image-->
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 366, height: 354 }) | jpeg %}" type="image/jpeg">
-                    <!--Tablet Image-->
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | avif %}" type="image/avif">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | webp %}" type="image/webp">
-                    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 600, height: 578 }) | jpeg %}" type="image/jpeg">
-                    <!--Desktop Image-->
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | avif %}" type="image/avif">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | webp %}" type="image/webp">
-                    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" type="image/jpeg">
-                    <img src="{% getUrl "/assets/images/construction.jpg" | resize({ width: 780, height: 752 }) | jpeg %}" alt="gavel" width="390" height="376" loading="lazy" decoding="async">
-                </picture>
-            </div>
-            <!-- Right Content Section-->
-            <div class="cs-content">
-                <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">
-                    About Stitch Law
-                </h2>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-                </p>
-                <a href="/about/" class="cs-button-solid">About Us</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Gallery                    -->
-    <!-- ============================================ -->
-
-    <section id="gallery-48">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Portfolio</span>
-                <h2 class="cs-title">
-                    Et orci volutpat, back up generator installations
-                </h2>
-            </div>
-            <div class="cs-image-group">
-                <div class="cs-row cs-row-1">
-                    <!-- Row 1-->
-                    <picture class="cs-picture cs-picture-1">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 182, height: 250 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 182, height: 250 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 182, height: 250 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 634, height: 798 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 634, height: 798 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 634, height: 798 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port1.jpg" | resize({ width: 826, height: 1134 }) | jpeg %}" alt="new hallway" width="413" height="567" loading="lazy" decoding="async">
-                    </picture>
-                    <picture class="cs-picture cs-picture-2">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port4.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="new home construction" width="413" height="629" loading="lazy" decoding="async">
-                    </picture>
-                    <picture class="cs-picture cs-picture-3">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 182, height: 226 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 182, height: 226 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 182, height: 226 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 634, height: 720 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 634, height: 720 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 634, height: 720 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port7.jpg" | resize({ width: 826, height: 1024 }) | jpeg %}" alt="building a new wall" width="413" height="512" loading="lazy" decoding="async">
-                    </picture>
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <picture class="cs-picture cs-picture-1">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 182, height: 216 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 182, height: 216 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 182, height: 216 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 634, height: 692 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 634, height: 692 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 634, height: 692 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port2.jpg" | resize({ width: 826, height: 984 }) | jpeg %}" alt="new kitchen" width="413" height="492" loading="lazy" decoding="async">
-                    </picture>
-                    <picture class="cs-picture cs-picture-2">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 182, height: 228 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 182, height: 228 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 182, height: 228 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 634, height: 728 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 634, height: 728 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 634, height: 728 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port5.jpg" | resize({ width: 826, height: 1034 }) | jpeg %}" alt="apartment addition" width="413" height="517" loading="lazy" decoding="async">
-                    </picture>
-
-                    <picture class="cs-picture cs-picture-3">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port8.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="kew kitchen cabinets" width="413" height="629" loading="lazy" decoding="async">
-                    </picture>
-
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <picture class="cs-picture cs-picture-1">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 634, height: 880 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 634, height: 880 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 634, height: 880 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port3.jpg" | resize({ width: 826, height: 1250 }) | jpeg %}" alt="new black window structure" width="413" height="625" loading="lazy" decoding="async">
-                    </picture>
-                    <picture class="cs-picture cs-picture-2">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 182, height: 198 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 182, height: 198 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 182, height: 198 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 634, height: 636 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 634, height: 636 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 634, height: 636 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port6.jpg" | resize({ width: 826, height: 904 }) | jpeg %}" alt="kitchen rebovation" width="413" height="452" loading="lazy" decoding="async">
-                    </picture>
-
-                    <picture class="cs-picture cs-picture-3">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 182, height: 276 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 182, height: 276 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 182, height: 276 }) | jpeg %}" type="image/jpeg">
-                        <!--Tablet Image-->
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 634, height: 886 }) | avif %}" type="image/avif">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 634, height: 886 }) | webp %}" type="image/webp">
-                        <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 634, height: 886 }) | jpeg %}" type="image/jpeg">
-                        <!--Desktop Image-->
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | avif %}" type="image/avif">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | webp %}" type="image/webp">
-                        <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" type="image/jpeg">
-                        <img src="{% getUrl "/assets/images/portfolio/port9.jpg" | resize({ width: 826, height: 1258 }) | jpeg %}" alt="bathroom renovation" width="413" height="629" loading="lazy" decoding="async">
-                    </picture>
-
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                </div>
-            </div>
-            <a href="/project-one/" class="cs-button-solid">View a Project</a>
-        </div>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                   Reviews                    -->
-    <!-- ============================================ -->
-
-    <section id="reviews-67">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Our Reviews</span>
-                <h2 class="cs-title">
-                    Words From Our Customers
-                </h2>
-                <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
-                </p>
-            </div>
-            <ul class="cs-card-group">
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, debitis!
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
+        <div class="cs-content">
+            <span class="cs-topper">Patio Cover Builder In Tacoma</span>
+            <h2 class="cs-title">Your Style,
+Our Craftsmanship</h2>
+            <p class="cs-text">
+                At Tacoma Patio Covers, every project begins with your ideas and expectations. We focus on customer care, quality, and integrity to ensure we exceed your expectations. Working together, we design and build outdoor spaces that become beautiful, year-round living areas.
+            </p>
+            <p class="cs-text">
+                A patio is more than a backyard feature – it’s a place to create memories with loved ones. Whether you dream of an entertainer’s paradise or a peaceful retreat, we’ll bring your vision to life. Welcome to your new Outdoor Destination!
+            </p>
+            
+            <h3 class="cs-h3">Our Process</h3>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <strong>On-Site Consultation</strong>: We meet with you to understand your space, your goals, and how you want to use your patio year-round.
                 </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
+                <li class="cs-li">
+                    <strong>Custom Design</strong>: We design a patio cover that complements your home’s architecture and fits your layout perfectly.
+                </li>
+                <li class="cs-li">
+                    <strong>Professional Installation</strong>: Our team builds your pergola or patio cover using high-quality, weather-resistant materials built to last.
+                </li>
+                <li class="cs-li">
+                    <strong>Final Touches & Walkthrough</strong>: We complete the details, ensure everything is structurally sound, and walk you through your new outdoor space so it’s ready to enjoy.
                 </li>
             </ul>
-            <a href="/reviews/" class="cs-button-solid">Read All Reviews</a>
+            <a href="" class="cs-button-solid">Book A Consultation</a>
         </div>
-    </section>
+    </div>
+</section>
+     
 
-    {% include 'sections/cta.html' %}
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="services-279">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Services</span>
+            <h2 class="cs-title">Setting the Standard for Quality</h2>
+            <p class="cs-text">
+                We create patio covers & decks with the highest quality materials and craftsmanship, ensuring they stand the test of time. 
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="assets/images/cover4.jpg">
+    <source media="(min-width: 601px)" srcset="assets/images/cover4.jpg">
+    <img loading="lazy"
+         decoding="async"
+         src="assets/images/cover4.jpg"
+         alt="living room"
+         width="348"
+         height="433"
+         aria-hidden="true">
+</picture>
+                <div class="cs-box">
+                    <h3 class="cs-h3">Patio Covers</h3>
+                    <a class="cs-button-transparent" aria-label="read more about patio covers" href="">Read More</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="assets/images/outdoor-kitchen.jpg">
+    <source media="(min-width: 601px)" srcset="assets/images/outdoor-kitchen.jpg">
+    <img loading="lazy"
+         decoding="async"
+         src="assets/images/outdoor-kitchen.jpg"
+         alt="living room"
+         width="348"
+         height="433"
+         aria-hidden="true">
+</picture>
+                <div class="cs-box">
+                    <h3 class="cs-h3">Outdoor Kitchens</h3>
+                    <a class="cs-button-transparent" aria-label="read more about outdoor kitchens" href="">Read More</a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="assets/images/deck1.jpg">
+    <source media="(min-width: 601px)" srcset="assets/images/deck1.jpg">
+    <img loading="lazy"
+         decoding="async"
+         src="assets/images/deck1.jpg"
+         alt="deck project"
+         width="348"
+         height="433"
+         aria-hidden="true">
+</picture>
+                <div class="cs-box">
+                    <h3 class="cs-h3">Decks</h3>
+                    <a class="cs-button-transparent" aria-label="read more about decks" href="">Read More</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+                
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-68">
+    <div class="cs-container">
+        <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="assets/images/cover.jpg">
+    <source media="(min-width: 601px)" srcset="assets/images/cover.jpg">
+    <img loading="lazy"
+         decoding="async"
+         src="assets/images/cover.jpg"
+         alt="patio cover installation"
+         width="500"
+         height="552"
+         aria-hidden="true">
+</picture>
+        <div class="cs-content">
+            
+            <h2 class="cs-title">Jose Gomez</h2>
+            <span class="cs-topper">Owner / Founder</span>
+            <p class="cs-text">
+                Hi everyone, I’m Jose Gomez — proud owner of Tacoma Patio Covers. It’s my personal commitment to deliver an outdoor oasis built with the highest level of quality and craftsmanship. I stay hands-on throughout every step of the process to ensure each customer receives my very best.
+            </p>
+            <a class="cs-button-solid" aria-label="learn more about our programs" href="">Learn More</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
+
+<section id="sbs-2348">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">About Us</span>
+            <h2 class="cs-title">Need design help? We would be happy to assist!</h2>
+            <p class="cs-text">
+                Some clients come with a clear vision, and others need a little help finding direction. Regardless, we’re here to make your ideas clear and bring your project to life.
+
+Take a look at our portfolio for ideas, knowing we can create anything you imagine. We look forward to helping you build your perfect outdoor retreat! Schedule a consultation today.
+            </p>
+            <a href="" class="cs-button-solid">Project Gallery</a>
+        </div>
+        <picture class="cs-picture">
+    <!--Mobile Image-->
+    <source media="(max-width: 600px)" srcset="assets/images/render.jpg">
+    <!--Tablet and above Image-->
+    <source media="(min-width: 601px)" srcset="assets/images/render.jpg">
+    <img loading="lazy"
+         decoding="async"
+         src="assets/images/render.jpg"
+         alt="building"
+         width="1280"
+         height="568">
+</picture>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-2418">
+    <div class="cs-container">
+        <figure class="cs-card">
+            <div class="cs-content">
+                <h2 class="cs-topper">Happy Clients Speak</h2>
+                <p class="cs-title">Top-Rated Patio Cover Builder Tacoma</p>
+                    <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-14e76289-b39d-4850-a72b-898eac230748" data-elfsight-app-lazy></div>
+            </div>
+            
+    </div>
+    <picture class="cs-background">
+    <!-- coincides with css Custom mid Mobile/Tablet breakpoint -->
+    <!-- update media max and min below if css changes -->
+    <source media="(max-width: 767px)" srcset="assets/images/cover5.jpg">
+    <source media="(min-width: 768px)" srcset="assets/images/cover5.jpg">
+    <img loading="lazy"
+         decoding="async"
+         src="assets/images/cover5.jpg"
+         alt="background"
+         width="630"
+         height="877">
+</picture>
+</section>
+                                
+
+                                
+
+    
 {% endblock %}

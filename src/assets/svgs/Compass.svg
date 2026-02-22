@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Compass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #231f20;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #231f20;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="11" y1="49" x2="11" y2="44"/>
+  <path class="cls-1" d="M1,54V15c0-2.76,2.24-5,5-5h5v25"/>
+  <line class="cls-1" x1="11" y1="40" x2="11" y2="39"/>
+  <path class="cls-1" d="M63,58H5c-2.21,0-4-1.79-4-4h0c0-2.21,1.79-4,4-4h6"/>
+  <polyline class="cls-1" points="41 18 63 18 63 58"/>
+  <line class="cls-1" x1="33" y1="18" x2="11" y2="18"/>
+  <rect class="cls-1" x="19" y="44" width="36" height="8"/>
+  <line class="cls-1" x1="25" y1="49" x2="25" y2="52"/>
+  <line class="cls-1" x1="31" y1="49" x2="31" y2="52"/>
+  <line class="cls-1" x1="37" y1="49" x2="37" y2="52"/>
+  <line class="cls-1" x1="43" y1="49" x2="43" y2="52"/>
+  <line class="cls-1" x1="49" y1="49" x2="49" y2="52"/>
+  <rect class="cls-1" x="33" y="14" width="8" height="8" rx="4" ry="4"/>
+  <polyline class="cls-1" points="35 14.55 35 10 39 10 39 14.55"/>
+  <path class="cls-1" d="M40.92,18.79l8.25,14.29c.57.98.53,2.21-.09,3.15l-1.45,2.19-9.56-16.57"/>
+  <path class="cls-1" d="M35.93,21.85l-9.56,16.57-1.45-2.19c-.62-.94-.66-2.17-.09-3.15l8.25-14.29"/>
+  <path class="cls-1" d="M26,26h0c6.24,5.67,15.76,5.67,22,0h0"/>
+  <circle class="cls-2" cx="37" cy="18" r="1"/>
+</svg>
