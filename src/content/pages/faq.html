@@ -1,0 +1,342 @@
+---
+title: "Tacoma Patio Covers FAQs | Your Deck & Patio cover Questions"
+description: "Find answers to common questions about decks and patio covers in Tacoma. Learn about materials, permits, warranties, service areas, and how we ensure quality craftsmanship"
+permalink: "/frequently-asked-questions/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/faq.css">
+    <script src="/assets/js/faq.js" defer></script>
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Frequently Asked Questions</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/frequently-asked-questions/" class="cs-link cs-active">FAQ</a>
+            </div>
+        </div>
+        <!--Background Image-->
+         <picture class="cs-background">
+    <!--Mobile Image-->
+    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+    
+    <!--Tablet Image-->
+    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+    
+    <!--Desktop Image-->
+    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+    
+    <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" 
+         alt="deck project" 
+         width="1920" 
+         height="482" 
+         loading="eager" 
+         decoding="async">
+</picture>
+    </div>
+
+<!-- ============================================ -->
+<!--                    FAQ                       -->
+<!-- ============================================ -->
+
+<section id="faq-1346">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Asked Questions</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <p class="cs-text">
+Building a deck or patio cover is a major investment for homeowners in Tacoma and throughout Pierce County. At Tacoma Patio Covers, we know clients often have questions about our services and the materials we use.
+<br><br>
+Below, we’ve compiled answers to some of the most common FAQs about our deck and patio cover projects. If you don’t see what you’re looking for, feel free to reach out to our team for more details.
+</p>
+        </div>
+        <div class="cs-flex-group">
+            <div class="cs-button-group">
+                <!--If you need to add another button, make sure to copy and paste from one of the buttons here and increment the data-filter value, so the next one would be data-filter="four", and so on-->
+                <button class="cs-option" data-filter="one">
+                    patio Covers
+                </button>
+                <button class="cs-option" data-filter="two">
+                    Decks
+                </button>
+                <button class="cs-option" data-filter="three">
+                    Covered Decks
+                </button>
+            </div>
+            <!--We need this wrapper so the absolutely positioned FAQ lists can be positioned to the top of it to so the animations don't amke it overlap the buttons group above it. We needed a wrapper div around it for the faq lists to be relatively positioned to in order to get the effect we wanted-->
+            <div class="cs-wrapper">
+                <!--If you add more FAQ's, copy and paste of of the .cs-faq-grop lists and increment the data-category to the next number. We have three right now, if you added a fourth you'd change it to data-category="four" to correspond to the new button you created in the .cs-button-group. The filter and category data attributes need to match so they can work together-->
+                <ul class="cs-faq-group" data-category="one">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Do I need a permit for a patio cover?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Permit requirements depend on your city or county and how the patio cover is designed. Details such as size, whether it’s attached to your home, overall height, property setbacks, and total lot coverage can all determine if a permit is required. We help guide homeowners through this process to ensure everything is built to code.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What’s the difference between a patio cover and a pergola?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Patio covers and pergolas may look similar, but they serve different purposes. A patio cover has a solid roof that keeps rain out for year-round use, while a pergola has an open design that provides shade but doesn’t protect from rain. If you want to stay dry, choose a patio cover. If you just want shade and style, a pergola works great.
+                        </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How much does a patio cover cost?
+                            </span>
+                        </button>                      
+                            <p class="cs-item-p">
+                            Most wood patio covers range from $16,000–$20,000 for a 14×14 size (about $80–$102 per square foot), depending on the style.
+                            <br><br>
+                            Final pricing varies based on size, design, site conditions, and upgrades like tongue-and-groove ceilings, lighting, fans, heaters, and post wraps.
+                            </p>                        
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How Do I Choose Between Wood and Acrylic Patio Covers?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            It comes down to style and light.
+                            <br><br>
+                            Wood patio covers offer a warm, traditional look and are ideal if you want to add fans, heaters, lighting, or screens.
+                            <br><br>
+                            Acrylic patio covers deliver a sleek, modern feel and let natural light pass through—keeping your patio and nearby rooms brighter year-round.
+                            </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How long will my permit take?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Permitting starts with completed drawings delivered within 10 business days of purchase.
+                            <br><br>
+                            Most cities average about 60 days for approval, though complex lots or busy seasons can extend timelines up to 6 months.
+                            <br><br>
+                            Starting earlier in the year can help speed things up.
+                            </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What Areas Do You Serve Around Tacoma?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            We serve Tacoma and the surrounding areas, including Puyallup, Lakewood, University Place, Gig Harbor, Graham, Spanaway, Auburn, and Federal Way.
+                            <br><br>
+                            Basically, if it’s in Pierce County, we’ve got you covered.
+                            </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What Is the ROI on a Patio Cover?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            A custom patio cover typically delivers a 70–80% return on investment, depending on craftsmanship and long-term care.
+                            <br><br>
+                            That means you can expect to recoup most of what you invested when it’s time to sell—while enjoying the added comfort and functionality in the meantime.
+                            </p>
+                    </li>
+                </ul>
+                <ul class="cs-faq-group cs-hidden" data-category="two">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How Do You Determine if a Deck Needs Repairs or Full Replacement?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            We don’t guess—we inspect.
+                            <br><br>
+                            If the underlying structure is still solid, replacing a few boards or railings may be all that’s needed.
+                            <br><br>
+                            But if we find deep rot, unsafe framing, or shifting footings, we’ll explain why a full replacement makes more sense. You’ll always know exactly what we see—and why we recommend it.
+</p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What Decking Materials Do You Recommend for the Tacoma Climate?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            The Pacific Northwest climate means steady rain, moisture, and long gray seasons—so durability matters.
+                            <br><br>
+                            We primarily recommend TimberTech composite decking because it resists moisture, rot, and fading while requiring far less maintenance than traditional wood.
+                            <br><br>
+                            If you prefer real wood, we’ll help you choose the right species and finish to handle Tacoma’s wet conditions and keep it protected for the long haul.
+                            </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How Do You Ensure Quality and Craftsmanship on Your Projects?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            We build every project like it’s going in our own backyard.
+                            <br><br>
+                            That means precise cuts, code-compliant framing, smart layout planning, and clean finishes—right down to the borders on your deck boards.
+                            <br><br>
+                            We’re not just building for today. We’re building something that feels solid and looks sharp for years to come.
+                            </p>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Can You Pull Permits for My Deck?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Yes, we can handle permits for your deck.
+                            <br><br>
+                            We create our own plans and submit them to the city—or your HOA if applicable—so you don’t have to worry about the paperwork.
+                            </p>
+                    </li>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What Kind of Composite Decking Do You Use?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            We primarily use TimberTech because we believe it’s the best composite decking on the market.
+                            <br><br>
+                            If you prefer another brand, we’re happy to install it too—our goal is to make sure your deck looks great and lasts for years.
+                            </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What Areas Do You Serve Around Tacoma?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            We serve Tacoma and the surrounding areas, including Puyallup, Lakewood, University Place, Gig Harbor, Graham, Spanaway, Auburn, and Federal Way.
+                            <br><br>
+                            Basically, if it’s in Pierce County, we’ve got you covered.
+                            </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What Is the Warranty on the Decking Materials You Use?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            We want you to feel confident in your investment.
+                            <br><br>
+                            The decking materials we use come with 25–50 year manufacturer warranties, giving you long-term peace of mind.
+                            </p>
+                    </li>
+                    
+                </ul>
+                <ul class="cs-faq-group cs-hidden" data-category="three">
+                    <!-- Active class added as default -->
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                What Are the Benefits of Adding a Roof to My Deck or Patio?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Adding a roof turns your deck or patio into a protected, all-season space that feels like a natural extension of your home.
+                            <br><br>
+                            It provides shade in the summer, shields against rain and snow, and protects your outdoor furniture and finishes.
+                            <br><br>
+                            Whether entertaining or relaxing, a covered deck or patio is more livable, luxurious, and usable—rain or shine.
+                            </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Can I Add Lighting and Fans to a Covered Outdoor Space?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Absolutely. Ceiling fans, lighting, heaters, and even built-in speakers are popular upgrades for covered decks and patios.
+                            <br><br>
+                            These features transform your outdoor space into a true outdoor room—comfortable, functional, and usable day or night.
+                            <br><br>
+                            We design every element to meet your needs while keeping a clean, polished look.
+                            </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Will a Covered Deck Increase My Home’s Value?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Yes—covered decks are a smart investment. They enhance daily living and add appeal for future buyers by increasing usable outdoor space.
+                            <br><br>
+                            With quality materials and thoughtful design, a covered deck boosts curb appeal, supports year-round use, and becomes a standout feature that can increase your home’s market value.
+                            </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                How Long Does It Take to Build a Covered Deck?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Most covered decks take 4–8 weeks from start to finish, depending on size, design complexity, and permit timelines.
+                            <br><br>
+                            We provide a clear schedule upfront so you know what to expect and can plan your outdoor living around it.
+                            </p>
+                    </li>
+                    <li class="cs-faq-item">
+                        <button class="cs-button">
+                            <span class="cs-button-text">
+                                Can I Choose the Roof Style for My Covered Deck?
+                            </span>
+                        </button>
+                        <p class="cs-item-p">
+                            Absolutely. From flat and modern to pitched or gabled roofs, we tailor the style to match your home and outdoor vision.
+                            <br><br>
+                            We’ll help you pick materials, colors, and finishes that balance aesthetics, durability, and function.
+                            </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+                                
+                                
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

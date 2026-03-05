@@ -9,7 +9,7 @@ module.exports = {
         state: "WA",
         zip: "98444",
         country: "US",
-        mapLink: "https://maps.app.goo.gl/AFy2wdk2AsjPRWis9",
+        mapLink: "https://share.google/vBepTVhhLbHcmj0Hp",
     },
     socials: {
         facebook: "https://www.facebook.com/tacomapatiocovers",

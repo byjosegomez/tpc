@@ -37,9 +37,9 @@ module.exports = async function () {
                 sourceMap: isProduction
                     ? false
                     : {
-                          outputSourceFiles: true,
-                          sourceMapFileInline: true,
-                      },
+                        outputSourceFiles: true,
+                        sourceMapFileInline: true,
+                    },
             });
 
             // Step 2 - Run the generated CSS through PostCSS for autoprefixer. Generate a source map (based on the LESS map) if we're in development
@@ -49,10 +49,10 @@ module.exports = async function () {
                 map: isProduction
                     ? false
                     : {
-                          prev: lessOutput.map,
-                          inline: true,
-                          annotation: true,
-                      },
+                        prev: lessOutput.map,
+                        inline: true,
+                        annotation: true,
+                    },
             });
 
             // Step 3 - Write the CSS to a file
@@ -69,3 +69,4 @@ module.exports = async function () {
 
     await Promise.all(processPromises);
 };
+

@@ -1,0 +1,588 @@
+---
+title: "Projects | Tacoma Patio Covers"
+description: "Browse our portfolio of completed projects ranging from patio covers, pergolas, decks ,and more. Contact us today for a free quote!"
+permalink: "/project-gallery/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/project-gallery.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Project Gallery</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/project-gallery/" class="cs-link cs-active">Project Gallery</a>
+            </div>
+        </div>
+        <!--Background Image-->
+         <picture class="cs-background">
+    <!--Mobile Image-->
+    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+    <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+    
+    <!--Tablet Image-->
+    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+    <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+    
+    <!--Desktop Image-->
+    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+    <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+    
+    <img src="{% getUrl "/assets/images/banner.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" 
+         alt="deck project" 
+         width="1920" 
+         height="482" 
+         loading="eager" 
+         decoding="async">
+</picture>
+    </div>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<!--
+    To add a 5th or 6th gallery or more, copy and paste the cs-button and change it's data-filter to th next number, in this case it's 5. Do the dame to the cs-gallery and its data-category number. And thats it!
+-->
+
+<section id="gallery-2281">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Our Portfolio</span>
+                <h2 class="cs-title">Featured Projects</h2>
+            </div>
+            <div class="cs-button-group">
+                <button class="cs-button" data-filter="one">
+                    All
+                </button>
+                <button class="cs-button" data-filter="two">
+                    Patio Covers
+                </button>
+                <button class="cs-button" data-filter="three">
+                    Decks
+                </button>
+                <button class="cs-button" data-filter="four">
+                    Covered Deck
+                </button>
+            
+            </div>
+        </div>
+        <div class="cs-gallery-wrapper">
+            <!--Gallery 1-->
+            <div class="cs-gallery" data-category="one">
+                <!--Picture 1-->
+                <!-- Deck -->
+<a class="cs-image" href="/north-dark-cocoa/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/timbertech-deck.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/timbertech-deck.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/timbertech-deck.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Deck</span>
+        <span class="cs-project">North Dark Cocoa</span>
+    </div>
+</a>
+
+<!-- Covered Deck -->
+<a class="cs-image" href="/berkeley-covered-deck/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/cover1.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/cover1.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/cover1.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Covered Deck</span>
+        <span class="cs-project">Berkeley Covered Deck</span>
+    </div>
+</a>
+
+<!-- Patio Cover -->
+<a class="cs-image" href="/rosedale-ridge-patio-cover/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/gig-harbor-cover2.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/gig-harbor-cover2.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/gig-harbor-cover2.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Patio Cover</span>
+        <span class="cs-project">Rosedale Ridge Patio Cover</span>
+    </div>
+</a>
+
+<!-- Deck -->
+<a class="cs-image" href="/coconut-cocoa-retreat/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/east-side-deck.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/east-side-deck.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/east-side-deck.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Deck</span>
+        <span class="cs-project">Coconut Cocoa Retreat</span>
+    </div>
+</a>
+
+<!-- Covered Deck -->
+<a class="cs-image" href="/north-end-covered-deck/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/cover2.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/cover2.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/cover2.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Covered Deck</span>
+        <span class="cs-project">North End Covered Deck</span>
+    </div>
+</a>
+
+<!-- Patio Cover -->
+<a class="cs-image" href="/sky-island-patio-cover/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/bonney-lake-cover2.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/bonney-lake-cover2.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/bonney-lake-cover2.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Patio Cover</span>
+        <span class="cs-project">Sky Island Patio Cover</span>
+    </div>
+</a>
+
+<!-- Deck -->
+<a class="cs-image" href="/timbertech-mahogany/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/mahogany7.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/mahogany7.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/mahogany7.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Deck</span>
+        <span class="cs-project">TimberTech Mahogany</span>
+    </div>
+</a>
+
+<!-- Patio Cover -->
+<a class="cs-image" href="/grahams-chestnut/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/pergola4.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/pergola4.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/pergola4.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Patio Cover</span>
+        <span class="cs-project">Graham's Chestnut</span>
+    </div>
+</a>
+
+<!-- Covered Deck -->
+<a class="cs-image" href="/the-graham-covered-deck/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/graham-cover2.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/graham-cover2.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/graham-cover2.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Covered Deck</span>
+        <span class="cs-project">The Graham Covered Deck</span>
+    </div>
+</a>
+
+<!-- Deck -->
+<a class="cs-image" href="/artondale-glow/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/gig-harbor-deck3.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/gig-harbor-deck3.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/gig-harbor-deck3.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Deck</span>
+        <span class="cs-project">Artondale Glow</span>
+    </div>
+</a>
+
+<!-- Patio Cover -->
+<a class="cs-image" href="/north-east-gable/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/cover3.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/cover3.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/cover3.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Patio Cover</span>
+        <span class="cs-project">North East Gable</span>
+    </div>
+</a>
+
+<!-- Covered Deck -->
+<a class="cs-image" href="/timberframe-terrace/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/tacoma-cover1.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/tacoma-cover1.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/tacoma-cover1.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Covered Deck</span>
+        <span class="cs-project">The Timberframe Terrace</span>
+    </div>
+</a>
+
+<!-- Deck -->
+<a class="cs-image" href="/the-khaya-project/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/deckorators-deck.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/deckorators-deck.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/deckorators-deck.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Deck</span>
+        <span class="cs-project">The Khaya Project – UP</span>
+    </div>
+</a>
+
+<!-- Patio Cover -->
+<a class="cs-image" href="/thrift-gable/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/thrift-graham.jpeg">
+    <source media="(min-width: 601px)" srcset="/assets/images/thrift-graham.jpeg">
+    <img loading="lazy" decoding="async" src="/assets/images/thrift-graham.jpeg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Patio Cover</span>
+        <span class="cs-project">Thrift Gable</span>
+    </div>
+</a>
+
+<!-- Covered Deck -->
+<a class="cs-image" href="/all-weather-terrace/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/trex-covered-deck.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/trex-covered-deck.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/trex-covered-deck.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Covered Deck</span>
+        <span class="cs-project">The All-Weather Terrace</span>
+    </div>
+</a>
+
+<!-- Deck -->
+<a class="cs-image" href="/project-sandstone/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/trexdeck2.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/trexdeck2.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/trexdeck2.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Deck</span>
+        <span class="cs-project">Project Sandstone – Puyallup, WA</span>
+    </div>
+</a>
+
+<!-- Patio Cover -->
+<a class="cs-image" href="/the-modern-pergola-project/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/east-side-patio-cover2.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/east-side-patio-cover2.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/east-side-patio-cover2.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Patio Cover</span>
+        <span class="cs-project">The Modern Pergola Project</span>
+    </div>
+</a>
+
+<!-- Covered Deck -->
+<a class="cs-image" href="/auburn-skylifted/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/skylifted.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/skylifted.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/skylifted.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Patio Cover</span>
+        <span class="cs-project">Auburn Skylifted</span>
+    </div>
+</a>
+
+<!-- Deck -->
+<a class="cs-image" href="/driftwood-heights/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/multi-level1.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/multi-level1.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/multi-level1.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Deck</span>
+        <span class="cs-project">Driftwood Heights</span>
+    </div>
+</a>
+
+<!-- Deck -->
+<a class="cs-image" href="/the-toasted-sand-spa/">
+    <picture class="cs-picture">
+    <source media="(max-width: 600px)" srcset="/assets/images/deck-onlympia.jpg">
+    <source media="(min-width: 601px)" srcset="/assets/images/deck-onlympia.jpg">
+    <img loading="lazy" decoding="async" src="/assets/images/deck-onlympia.jpg" alt="gallery" width="305" height="400">
+    </picture>
+    <div class="cs-info">
+        <span class="cs-tag">Deck</span>
+        <span class="cs-project">The Toasted Sand Spa</span>
+    </div>
+</a>
+            </div>
+            <!--Gallery 2-->
+            <div class="cs-gallery cs-hidden" data-category="two">
+                <a class="cs-image" href="/rosedale-ridge-patio-cover/">
+                    <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/gig-harbor-cover2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/gig-harbor-cover2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/gig-harbor-cover2.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Patio Cover</span>
+                        <span class="cs-project">Rosedale Ridge Patio Cover</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/sky-island-patio-cover/">
+                    <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/bonney-lake-cover2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/bonney-lake-cover2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/bonney-lake-cover2.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Patio Cover</span>
+                        <span class="cs-project">Sky Island Patio Cover</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/grahams-chestnut/">
+                    <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/pergola4.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/pergola4.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/pergola4.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Patio cover</span>
+                        <span class="cs-project">Graham's Chestnut</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/north-east-gable/">
+                    <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/cover3.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/cover3.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/cover3.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Patio Cover</span>
+                        <span class="cs-project">North East Gable</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/thrift-gable/">
+                        <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/thrift-graham.jpeg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/thrift-graham.jpeg">
+                    <img loading="lazy" decoding="async" src="/assets/images/thrift-graham.jpeg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Patio Cover</span>
+                        <span class="cs-project">Thrift Gable</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/the-modern-pergola-project/">
+                        <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/east-side-patio-cover2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/east-side-patio-cover2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/east-side-patio-cover2.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Patio Cover</span>
+                        <span class="cs-project">The Modern Pergola Project</span>
+                    </div>
+                </a>
+            </div>
+            <!--Gallery 3-->
+            <div class="cs-gallery cs-hidden" data-category="three">
+                <a class="cs-image" href="/north-dark-cocoa/">
+                        <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/timbertech-deck.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/timbertech-deck.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/timbertech-deck.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Deck</span>
+                        <span class="cs-project">North Dark Cocoa</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/coconut-cocoa-retreat/">
+                        <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/east-side-deck.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/east-side-deck.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/east-side-deck.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Deck</span>
+                        <span class="cs-project">Coconut Cocoa Retreat</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/timbertech-mahogany/">
+                        <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/mahogany7.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/mahogany7.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/mahogany7.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Deck</span>
+                        <span class="cs-project">TimberTech Mahogany</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/artondale-glow/">
+                    <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/gig-harbor-deck3.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/gig-harbor-deck3.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/gig-harbor-deck3.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Deck</span>
+                        <span class="cs-project">Artondale Glow</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/the-khaya-project/">
+                        <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/deckorators-deck.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/deckorators-deck.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/deckorators-deck.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Deck</span>
+                        <span class="cs-project">The Khaya Project – UP</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/project-sandstone/">
+                    <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/trexdeck2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/trexdeck2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/trexdeck2.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Deck</span>
+                        <span class="cs-project">Project Sandstone – Puyallup, WA</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/driftwood-heights/">
+                    <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/multi-level1.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/multi-level1.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/multi-level1.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Deck</span>
+                        <span class="cs-project">Driftwood Heights</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/the-toasted-sand-spa/">
+                    <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/deck-onlympia.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/deck-onlympia.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/deck-onlympia.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Deck</span>
+                        <span class="cs-project">The Toasted Sand Spa</span>
+                    </div>
+                </a>
+            </div>
+            <!--Gallery 4-->
+            <div class="cs-gallery cs-hidden" data-category="four">
+                <a class="cs-image" href="/berkeley-covered-deck/">
+                    <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/cover1.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/cover1.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/cover1.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Covered Deck</span>
+                        <span class="cs-project">Berkeley Covered Deck</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/north-end-covered-deck/">
+                    <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/cover2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/cover2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/cover2.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Covered Deck</span>
+                        <span class="cs-project">North End Covered Deck</span>
+                    </div>
+                </a>
+                
+                
+                <a class="cs-image" href="/the-graham-covered-deck/">
+                    <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/graham-cover2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/graham-cover2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/graham-cover2.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Covered Deck</span>
+                        <span class="cs-project">The Graham Covered Deck</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/timberframe-terrace/">
+                    <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/tacoma-cover1.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/tacoma-cover1.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/tacoma-cover1.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Covered Deck</span>
+                        <span class="cs-project">The Timberframe Terrace</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/all-weather-terrace/">
+                    <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/trex-covered-deck.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/trex-covered-deck.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/trex-covered-deck.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Covered Deck</span>
+                        <span class="cs-project">The All-Weather Terrace</span>
+                    </div>
+                </a>
+                <a class="cs-image" href="/auburn-skylifted/">
+                        <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/skylifted.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/skylifted.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/skylifted.jpg" alt="gallery" width="305" height="400">
+                    </picture>
+                    <div class="cs-info">
+                        <span class="cs-tag">Patio Cover</span>
+                        <span class="cs-project">Auburn Skylifted</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+                                                     
+ 
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

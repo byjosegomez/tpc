@@ -6,151 +6,242 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 /*-- -------------------------- -->
-<---       Side By Side         -->
+<---          Contact           -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #RPsbs-313 {
+    #contact-1700 {
         padding: var(--sectionPadding);
+        position: relative;
+        z-index: 1;
 
         .cs-container {
             width: 100%;
-            max-width: (1280/16rem);
+            /* changes to 1280px at desktop */
+            max-width: (584/16rem);
             margin: auto;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            /* 48px - 64px */
-            gap: clamp(3rem, 6vw, 4rem);
+            /* 48px - 128px */
+            gap: clamp(3rem, 10vw, 8rem);
+            position: relative;
         }
 
         .cs-content {
             /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
-            max-width: (542/16rem);
             display: flex;
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
             align-items: flex-start;
         }
 
-        .cs-text {
-            margin-bottom: (16/16rem);
-            &:last-of-type {
-                margin-bottom: (32/16rem);
+        .cs-title {
+            max-width: 23ch;
+            margin: 0 0 (16/16rem) 0;
+        }
+
+        .cs-topper {
+            color: var(--primary);
+        }
+
+        .cs-author {
+            margin-top: (40/16rem);
+            display: flex;
+            align-items: center;
+            gap: (16/16rem);
+        }
+
+        .cs-profile {
+            width: (52/16rem);
+            height: (52/16rem);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 50%;
             }
         }
 
-        .cs-quote {
-            margin: 0 0 (32/16rem) 0;
-            /* 16px - 32px */
-            padding: clamp(1rem, 3vw, 2rem);
-            background-color: #f7f7f7;
-            border-radius: (16/16rem);
+        .cs-text {
+            margin-bottom: 1.5rem;
+        }
+
+        #contact-1700 .cs-form .cs-title {
+            color: #ffffff;
+            /* change to whatever color you want */
+        }
+
+        .cs-flex-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cs-signature {
+            width: auto;
+            height: (43/16rem);
+        }
+
+        .cs-form {
+            width: 100%;
+            max-width: (632/16rem);
+            /* prevents flexbox from affecting height and width */
+            box-sizing: border-box;
+            /* 32px - 48px top and bottom */
+            /* 16px - 60px left and right */
+            padding: clamp(2rem, 5.18vw, 3rem) clamp(1rem, 5vw, 3.75rem);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: (12/16rem);
             position: relative;
+            /* prevents flexbox from squishing it */
+            flex: none;
+            background-color: #002136;
+
+            .cs-title {
+                /* 24px - 48px */
+                margin: 0 0 clamp(1.5rem, 4vw, 3rem) 0;
+                color: white;
+            }
         }
 
-        .cs-quote-text {
-            /* 14px - 16px */
-            font-size: clamp(0.875rem, 1.5vw, 1rem);
-            line-height: 1.5em;
-            margin: 0 0 (16/16rem);
-            color: #767676;
-            display: block;
-        }
-
-        .cs-name {
+        .cs-label {
             font-size: (16/16rem);
-            line-height: 1.2em;
-            text-transform: uppercase;
-            font-weight: bold;
-            margin: 0 0 (4/16rem);
+            width: 100%;
+            color: var(--bodyTextColorWhite);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            grid-column: span 12;
+            gap: (4/16rem);
+        }
+
+        .cs-input {
+            font-size: (16/16rem);
+            width: 100%;
+            height: (56/16rem);
+            /* prevents padding from adding to height and width */
+            box-sizing: border-box;
+            padding: 0;
+            padding-left: (24/16rem);
             color: var(--headerColor);
-            display: block;
+            background-color: #fff;
+            border: none;
+
+            &::placeholder {
+                color: #767676;
+                opacity: 0.6;
+            }
         }
 
-        .cs-job {
-            font-size: (14/16rem);
-            line-height: 1.5em;
-            color: #767676;
-            display: block;
+        .cs-textarea {
+            font-family: inherit;
+            min-height: (120/16rem);
+            /* 16px - 28px */
+            margin: 0 0 clamp(1rem, 3vw, 1.75rem) 0;
+            padding-top: (24/16rem);
         }
 
-        .cs-quote-icon {
-            /* 60px - 136px */
-            width: clamp(3.75rem, 10vw, 8.5rem);
-            height: auto;
-            position: absolute;
-            bottom: (0/16rem);
-            /* 16px - 32px */
-            right: clamp(1rem, 4vw, 2rem);
-        }
-
-        .cs-image-group {
-            /* scaling the font size with the view width */
-            font-size: ~"min(2.31vw, .7em)";
-            /* using ems so we can use font size to scale the whole section */
-            width: (631/16em);
-            height: (636/16em);
+        .cs-button-solid {
+            font-size: (16/16rem);
+            font-weight: 700;
+            /* 46px - 56px */
+            line-height: clamp(2.875em, 5.5vw, 3.5em);
+            text-align: center;
+            text-decoration: none;
+            min-width: (150/16rem);
+            margin: 0;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+            padding: 0 (24/16rem);
+            color: #fff;
+            background-color: var(--secondary);
+            border: none;
+            display: inline-block;
             position: relative;
-        }
-
-        .cs-picture {
-            border-radius: (24/16em);
-            /* clips img tag corners */
+            z-index: 1;
             overflow: hidden;
-            position: absolute;
-            display: block;
+            transition: color 0.3s;
 
-            img {
+            &:before {
+                content: "";
+                width: 0%;
+                height: 100%;
+                background: #000;
+                opacity: 1;
                 position: absolute;
                 top: 0;
                 left: 0;
-                height: 100%;
-                width: 100%;
-                /* makes image act like a background image */
-                object-fit: cover;
+                z-index: -1;
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                color: #fff;
+
+                &:before {
+                    width: 100%;
+                }
             }
         }
 
-        .cs-picture1 {
-            width: (522/16em);
-            height: (581/16em);
-            left: 0;
-            top: 0;
+        .cs-submit {
+            width: 100%;
+            min-width: (283/16rem);
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
-        .cs-picture2 {
-            width: (414/16em);
-            height: (400/16em);
-            background-color: #fff;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
-            /* 6px - 12px */
-            border: clamp(0.375em, 1.5vw, 0.75em) solid #fff;
-            right: 0;
-            bottom: 0;
+        .cs-background {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            &::before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: #f7f7f7;
+                opacity: 0.9;
+                position: absolute;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
 }
 
-/* Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-    #RPsbs-313 {
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #contact-1700 {
         .cs-container {
-            flex-flow: row;
+            max-width: (1280/16rem);
+            flex-direction: row;
             justify-content: space-between;
-            gap: (52/16rem);
         }
 
-        .cs-image-group {
-            font-size: ~"min(1.2vw, 1em)";
-            flex: none;
+        .cs-form {
+            width: 45vw;
         }
 
-        .cs-content {
-            margin: 0;
+        .cs-submit {
+            width: auto;
         }
     }
 }
@@ -158,43 +249,29 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #RPsbs-313 {
-            .cs-image-group {
-                &:before,
-                &:after {
-                    background: var(--accent);
+        #contact-1700 {
+
+            .cs-title,
+            .cs-job,
+            .cs-label,
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .cs-background {
+                &::before {
+                    background-color: var(--medium);
                 }
             }
 
-            .cs-picture2 {
-                background-color: var(--dark);
-                /* 6px - 12px */
-                border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-            }
+            .cs-input {
+                color: #fff;
+                background-color: rgba(255, 255, 255, 0.1);
 
-            .cs-topper {
-                color: var(--primaryLight);
-            }
-
-            .cs-title,
-            .cs-text,
-            .cs-h3,
-            .cs-quote-text,
-            .cs-name {
-                color: var(--bodyTextColorWhite);
-            }
-
-            .cs-quote {
-                background-color: var(--accent);
-            }
-
-            .cs-job {
-                color: var(--bodyTextColorWhite);
-                opacity: 0.8;
-            }
-
-            .cs-quote-icon {
-                opacity: 0.2;
+                &::placeholder {
+                    color: #fff;
+                    opacity: 0.8;
+                }
             }
         }
     }
